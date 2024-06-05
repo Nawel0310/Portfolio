@@ -1,0 +1,252 @@
+.fit-cover {
+  object-fit: cover;
+}
+
+@media (min-width: 991px) {
+  #navcol-3 {
+    margin-left: 115px;
+  }
+}
+
+@media (max-width: 767px) {
+  #nav-botones {
+    margin-bottom: 10px;
+  }
+}
+
+.componente {
+  background-color: #101010;
+}
+
+.texto-navbar {
+  font-family: 'Radio Canada', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.fondo {
+  background-color: #101010;
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001;
+}
+
+.fondo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-image: linear-gradient(to right,#2D033B, #810CA8);
+}
+
+.texto-navbar::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #810ca8, #c147e9);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease;
+}
+
+.texto-navbar:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.texto-navbar:hover {
+  background: linear-gradient(90deg, #c147e9, #810ca8);
+  -webkit-background-clip: text;
+}
+
+.boton-contacto {
+  font-family: 'Radio Canada', sans-serif;
+  font-size: 20px;
+  background: linear-gradient(-50deg, #810CA8 0%, #C147E9 100%);
+  color: #F2F2F2;
+  border-style: none;
+  /*box-shadow: inset 3px 3px 15px 1px #2D033B;*/
+  border-radius: 16px;
+}
+
+.boton-contacto:hover {
+  box-shadow: inset 0px 0px 20px 0px #C147E9, 0px 0px 20px 0px #C147E9;
+  background: linear-gradient(45deg, #C147E9 0%, #810ca8 100%);
+}
+
+#inicio {
+  position: relative;
+  background: linear-gradient(0deg, #202020 10%, var(--bs-border-color-translucent) 100%), url("../../assets/img/altumcode-dMUt0X3f59Q-unsplash.jpg") center / cover no-repeat;
+  overflow: hidden;
+  margin-top: 78px;
+}
+
+#inicio::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#inicio::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(5px);
+  z-index: 0;
+  transform: scale(1.05);
+}
+
+#inicio > * {
+  position: relative;
+  z-index: 2;
+}
+
+.font-titulo {
+  font-family: 'Radio Canada', sans-serif;
+  font-size: 64px;
+  background-image: linear-gradient(180deg,#810CA8, rgb(193,71,233));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.font-subtitulo {
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  color: #f2f2f2;
+}
+
+#fondo-presentacion {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  border-radius: 24px;
+  box-shadow: 0px 0px 16px 0px #810CA8;
+}
+
+.seccionSobreMi {
+  /*height: 500px;*/
+  background: #101010;
+}
+
+#descripcion-personal {
+  height: 500px;
+  width: 850px;
+}
+
+#contenedor-descripcion {
+  width: 700px;
+  height: 348px;
+}
+
+.text-degradado {
+  background: linear-gradient(90deg, #810ca8, #c147e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#contenedor-titulo {
+  width: 380px;
+}
+
+.elemento-lista {
+  margin-top: 26px;
+}
+
+#propuesta {
+  text-align: center;
+  margin-top: 30px;
+  background: #2D033B;
+  border-radius: 5px;
+}
+
+.sobre-mi {
+  font-size: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 8px #810CA8;
+  padding: 4px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+#foto-portada {
+  width: 541px;
+  height: 500px;
+}
+
+#foto-sobre-mi {
+  background: linear-gradient(45deg, #2D033B 0%, #810CA8 99%);
+  border-radius: 24px;
+  box-shadow: 0px 0px 8px 0px #810CA8;
+}
+
+.servicios {
+  background: linear-gradient(#101010 35%, #2D033B 86%);
+  height: 800px!important;
+}
+
+#titulo-servicios {
+  width: 400px;
+}
+
+#subtitulo-servicios {
+  text-align: center;
+}
+
+#descripcion-servicios {
+  padding-top: 24px;
+}
+
+.price-card {
+  font-family: Poppins, sans-serif;
+  color: #F2F2F2;
+  background: #101010;
+  border-radius: 16px;
+  box-shadow: inset 0px 0px 8px 1px #C147E9;
+  border-style: none;
+}
+
+.titlo-price-card {
+  color: #C147E9!important;
+  font-family: 'Radio Canada', sans-serif;
+}
+
+.bs-icon-xs.bs-icon-rounded.bs-icon-primary-light.bs-icon.icono-price-card {
+  background: rgba(0,0,0,0.0);
+}
+
+.titulo-card-price {
+  color: #f2f2f2;
+  font-family: 'Radio Canada', sans-serif;
+  text-align: center;
+}
+
+.hr-bar {
+  color: #C147E9;
+}
+
